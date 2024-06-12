@@ -108,9 +108,13 @@
 }
 
 .index-section-p{
-  text-align: justify;
   width: 30%;
   color: rgb(182, 36, 187);
+  font-size: 1.03rem;
+}
+
+.index-section-p p{
+  text-align: justify;
 }
 
 .index-section-p h3{
@@ -175,7 +179,8 @@
 .about-content-three p {
   max-width: 400px;
   text-align: justify;
-  color: rgb(255, 59, 131);
+  color: rgb(182, 36, 187);
+  font-size: 1.03rem;
 }
 
 .about-content-one h4,
@@ -192,6 +197,8 @@
 
 .contact-container{
   margin-top: 30px;
+  height: 100vh;
+  width: 100%;
 }
 
 .contact-title{
@@ -216,7 +223,7 @@
 
 .contact-img img{
   border-radius: 15px;
-  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.5);
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.3);
   width: 400px;
   height: 300px;
 }
@@ -255,3 +262,110 @@
   color: rgb(255, 59, 131);
 }
 
+/*   information page   */
+
+.info-container{
+  text-align: center;
+  margin-top: 30px;
+  height: 100vh;
+  width: 100%;
+}
+
+.info-container h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.info-container p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.info-table{
+  margin: 50px auto;
+  height: 30%;
+  width: 30%;
+  max-width: 500px;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.1);
+}
+
+.info-table thead{
+  background-color: rgba(137, 43, 226, 0.233);
+}
+
+.info-table th, td{
+  border: 1px solid rgb(182, 36, 187);
+  padding: 15px;
+}
+
+.info-table td{
+  color: blueviolet;
+}
+
+/*    benefits page    */
+
+.benefits-container{
+  height: 100vh;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.benefits-container h2, p{
+  text-align: center;
+}
+
+.benefits-container h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.benefits-container p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.benefits-list{
+  margin: 50px auto;
+  width: 900px;
+}
+
+.benefits-list-div-uno, .benefits-list-div-dos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid rgb(182, 36, 187);
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
+  font-size: 1.03rem;
+  color: rgb(69, 31, 105);
+}
+
+.benefits-list-div-uno img, .benefits-list-div-dos img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
+}
+
+.bl-ul{
+  width: 400px;
+}
+
+.bl-ul>li{
+  list-style: inside;
+}
+
+.bl-ul-ul{
+  margin-left: 40px;
+}
+
+.bl-ul-ul>li{
+  list-style: circle;
+  
+}
