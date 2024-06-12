@@ -304,6 +304,10 @@
   color: blueviolet;
 }
 
+.info-table td:first-child{
+  text-align: justify;
+}
+
 /*    benefits page    */
 
 .benefits-container{
@@ -343,7 +347,6 @@
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
   font-size: 1.03rem;
-  color: rgb(69, 31, 105);
 }
 
 .benefits-list-div-uno img, .benefits-list-div-dos img{
@@ -359,6 +362,13 @@
 
 .bl-ul>li{
   list-style: inside;
+  color: rgb(103, 4, 196);
+}
+
+.span-li{
+  font-size: 1.2rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
 }
 
 .bl-ul-ul{
@@ -367,5 +377,5 @@
 
 .bl-ul-ul>li{
   list-style: circle;
-  
+  color: rgb(182, 36, 187);
 }
