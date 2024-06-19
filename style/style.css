@@ -28,14 +28,17 @@
   top: 0;
   width: 100%;
   padding: 10px 30px;
+
+  z-index: 1;
 }
 
-.div-logo{
+.div-logo img{
   background-color: rgba(255, 59, 131, 0.356);
+  width: 50px;
   border-radius: 50%;
 }
 
-.div-logo:hover{
+.div-logo img:hover{
   background-color: rgba(255, 59, 131, 0.6);
   transition: .2s linear;
 }
@@ -46,16 +49,12 @@
 
 .div-li a{
   color: #fff;
-  padding: 20px;
+  margin: 20px;
 }
 
 .div-li a:hover{
   color: rgba(137, 43, 226, 0.6);
   transition: .2s linear;
-}
-
-.div-logo img{
-  width: 50px;
 }
 
 .footer{
@@ -65,6 +64,10 @@
   font-size: 1.1rem;
   color: #005;
   width: 100%;
+}
+
+.footer span{
+  font-weight: 600;
 }
 
 /*   index page   */
@@ -79,7 +82,7 @@
 }
 
 .index-article-title h2{
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: "Indie Flower", cursive;
 }
 
@@ -89,7 +92,7 @@
 }
 
 .article-img{
-  width: 50vw;
+  width: 60vw;
   max-width: 600px;
   border-radius: 10px;
   border: 1px solid blueviolet;
@@ -108,9 +111,10 @@
 }
 
 .index-section-p{
-  width: 30%;
+  width: 40%;
   color: rgb(182, 36, 187);
   font-size: 1.03rem;
+  max-width: 400px;
 }
 
 .index-section-p p{
@@ -170,7 +174,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
   margin: 20px;
 }
 
@@ -183,26 +186,15 @@
   font-size: 1.03rem;
 }
 
-.about-content-one h4,
-.about-content-two h4, 
-.about-content-three h4 {
-  color: rgb(182, 36, 187);
-  font-size: 1.5rem;
-  font-family: "Indie Flower", cursive;
-  text-align: center;
-  padding-bottom: 15px;
-}
-
 /*    contact page    */
 
 .contact-container{
-  margin-top: 30px;
-  height: 100vh;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .contact-title{
   text-align: center;
+  margin-top: 30px;
 }
 
 .contact-title h2{
@@ -245,7 +237,7 @@
 .contact-email, .contact-whatsapp{
   text-align: center;
   display: flex;
-
+  font-size: 1.15rem;
 }
 
 .contact-email a, .contact-whatsapp a{
@@ -255,7 +247,7 @@
 
 .contact-email a:hover, .contact-whatsapp a:hover{
   color: rgb(255, 59, 131);
-  transition: .3s linear;
+  transition: .2s linear;
 }
 
 .contact-email p, .contact-whatsapp p{
@@ -267,8 +259,8 @@
 .info-container{
   text-align: center;
   margin-top: 30px;
-  height: 100vh;
-  width: 100%;
+
+  flex-grow: 1;
 }
 
 .info-container h2{
@@ -285,7 +277,7 @@
 .info-table{
   margin: 50px auto;
   height: 30%;
-  width: 30%;
+  width: 50%;
   max-width: 500px;
   border-collapse: collapse;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.1);
@@ -311,9 +303,8 @@
 /*    benefits page    */
 
 .benefits-container{
-  height: 100vh;
-  width: 100%;
   margin-top: 30px;
+  flex-grow: 1;
 }
 
 .benefits-container h2, p{
@@ -332,8 +323,14 @@
 }
 
 .benefits-list{
-  margin: 50px auto;
-  width: 900px;
+  margin: 20px auto;
+  width: 70%;
+  max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .benefits-list-div-uno, .benefits-list-div-dos{
@@ -341,12 +338,15 @@
   justify-content: space-between;
   align-items: center;
 
-  margin: 50px;
+  margin: 40px;
   padding: 20px;
   border: 1px solid rgb(182, 36, 187);
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
   font-size: 1.03rem;
+  min-width: 320px;
+
+  width: 100%;
 }
 
 .benefits-list-div-uno img, .benefits-list-div-dos img{
@@ -354,28 +354,231 @@
   height: 200px;
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(137, 43, 226, 0.2);
+  margin-right: 10px;
+}
+
+.bl-div-dos{
+  width: 50%;
+}
+
+.bl-div-dos h3{
+  color: rgb(103, 4, 196);
+  font-family: "Indie Flower", cursive;
 }
 
 .bl-ul{
-  width: 400px;
-}
-
-.bl-ul>li{
-  list-style: inside;
-  color: rgb(103, 4, 196);
-}
-
-.span-li{
-  font-size: 1.2rem;
-  font-family: "Indie Flower", cursive;
-  font-weight: 600;
-}
-
-.bl-ul-ul{
   margin-left: 40px;
 }
 
-.bl-ul-ul>li{
+.bl-ul>li{
   list-style: circle;
   color: rgb(182, 36, 187);
 }
+
+/*     raffle page     */
+
+.raffle-title{
+  text-align: center;
+  margin: 30px;
+}
+
+.raffle-title h2{
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 59, 131);
+}
+
+.raffle-title p{
+  color: rgb(182, 36, 187);
+  font-size: 1.1rem;
+}
+
+.raffle-map{
+  text-align: center;
+}
+
+.raffle-map p{
+  color: rgb(182, 36, 187);
+  font-size: 1.3rem;
+  margin: 20px;
+}
+
+.raffle-map iframe{
+  border-radius: 5px;
+}
+
+.raffle-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 50px 0px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 17px;
+  
+  border: 1px solid rgb(182, 36, 187);
+  border-radius: 10px;
+  background-color: rgba(255, 59, 206, 0.05);
+
+  width: 350px;
+}
+
+.form-p{
+  text-align: left;
+}
+
+#fname, #lname, #select, #date{
+  background-color: #fbfbfb;
+  border: #fbfbfb;
+  height: 25px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.form textarea{
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.fieldset-button{
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fieldset-button button{
+  padding: 2px 12px;
+  color: rgb(74, 31, 114);
+}
+
+
+/*     media queries     */
+
+
+@media screen and (max-width: 768px) {
+  .head{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .div-li ul{
+    flex-direction: column;
+  }
+
+  .footer{
+    font-size: 0.8rem;
+  }
+
+  /*  index  */
+
+  .index-article-img{
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  .index-section{
+    flex-direction: column-reverse;
+  }
+
+  .index-section-img{
+    width: 50%;
+  }
+  
+  .index-section-img img{
+    margin-bottom: 30px;
+  }
+
+  /*  about  */
+
+  .about-content-one,
+  .about-content-two, 
+  .about-content-three {
+    flex-direction: column;
+  }
+
+  .about-content-one img,
+  .about-content-two img, 
+  .about-content-three img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .about-content-one p,
+  .about-content-two p, 
+  .about-content-three p {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /*  contact  */
+
+  .contact-img{
+    margin: 50px 0px;
+  }
+
+  .contact-img img{
+    width: 300px;
+    height: 200px;
+  }
+
+  .contact-rrss{
+    flex-direction: column;
+  }
+
+  .contact-rrss div{
+    margin: 8px 0px;
+  }
+
+  /*  benefits  */
+
+    .benefits-list-div-uno, .benefits-list-div-dos{
+    flex-direction: column;
+  }
+
+  /*  raffle  */
+
+  .raffle-content{
+    flex-direction: column-reverse;
+  }
+
+  .raffle-title p{
+    font-size: 1rem;
+  }
+  
+  .raffle-map iframe{
+    width: 350px;
+    height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  /*  contact  */
+
+  .contact-p {
+    font-size: 0.9rem;
+  }
+
+  /*  raffle  */
+
+  .raffle-map iframe{
+    width: 300px;
+    height: 200px;
+  }
+
+  /*  raffle  */
+
+  .form{
+    width: 300px;
+  }
+
+}
+
